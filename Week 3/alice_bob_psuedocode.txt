@@ -1,0 +1,34 @@
+Enter
+    DEFINE a function compareTriplets so that it takes two inputs a and b that represent Alice's and Bob's points and returns a tuple of their compare points
+        set alice_compare_points to the sum of the list of compare points she gets if she scored higher than bob in that category
+        set bob_compare_points to the sum of the list of compare points he gets if he scored higher than Alice in that category
+        RETURN a tuple of their compare points
+    EXIT function compareTriplets
+
+    START an infinite while loop
+        ENTER try block
+            get space seperated inputs for a_list and convert it into a list if the inputs are greater than 0 and smaller that 101
+            ASSERT that the length of a_list is 3 in order to check that the user inputed 3 numbers. If true continue otherwise throw an error
+            BREAK infinite loop
+        EXIT try block
+        ENTER except block
+            PRINT error message for when user does not enter 3 space-separated integers
+        EXIT except block
+    EXIT infinite loop
+
+    START an infinite while loop
+        ENTER try block
+            get space seperated inputs for b_list and convert it into a list if the inputs are greater than 0 and smaller that 101
+            ASSERT that the length of b_list is 3 in order to check that the user inputed 3 numbers. If true continue otherwise throw an error
+            BREAK infinite loop
+        EXIT try block
+        ENTER except block
+            PRINT error message for when user does not enter 3 space-separated integers
+        EXIT except block
+    EXIT infinite loop
+
+    set alice_compare_points to the sum of the list of her points by using list comprehension
+    set bob_compare_points to the sum of the list of his points by using list comprehension
+
+    PRINT the values recieved from calling compareTriplets with a_list and b_list as arguments which will be the scores of their compare points with Alice's score first and Bob's second
+Exit
